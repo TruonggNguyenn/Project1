@@ -92,6 +92,27 @@ void SinhVien::Xuat()
 	cout<< setw(4) << MaSV<<setw(30)<<TenSV<<setw(4)<<Diem<<endl;
 }
 
+void SinhVien::setDiem(double d)
+{
+	Diem = d;
+}
+
+void SinhVien::Nhap()
+{
+	cout<<"Moi nhap ma: ";
+	cin>>MaSV;
+	cin.ignore();
+	cout<<"Moi nhap ten: ";
+	getline(cin,TenSV);
+	cout<<"Moi nhap diem: ";
+	cin>>Diem;
+}
+
+void SinhVien::Xuat()
+{
+	cout<< setw(4) << MaSV<<setw(30)<<TenSV<<setw(4)<<Diem<<endl;
+}
+
 int main()
 {
 	SinhVien sv[100];

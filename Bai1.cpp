@@ -51,10 +51,7 @@ int SinhVien::getMaSV()
 	return MaSV;
 }
 
-void SinhVien::setMaSV(int m )
-{
-	MaSV = m;
-}
+
 
 string SinhVien::getTenSV()
 {
